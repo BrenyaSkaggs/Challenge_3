@@ -25,7 +25,7 @@ Candidates
 
 Election Winner
 
--Dianna Degette won this election wiht 738% of votes, 272,892 total votes.
+    -Dianna Degette won this election with 738% of votes, 272,892 total votes.
     - Charles Stockham was runner up with 23.0% of votes, 85,213 total votes.
     - Raymon Doane came in last with 3.1% of votes, 11.606 total votes.
 
