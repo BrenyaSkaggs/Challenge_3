@@ -97,11 +97,10 @@ for county_name in county_votes:
             largest_county_turnout = county_name
 
     # 7: Print the county with the largest turnout to the terminal.
-        largest_county_summary = (
-        f"-------------------------\n"
-        f'Largest County Turnout: {largest_county_turnout:,}\n'
-        f"-------------------------\n"
-        )
+        largest_county_summary = ( f"-------------------------\n"
+        f"Largest County Turnout: {largest_county_turnout:,}\n"
+        f"-------------------------\n")
+
         print(largest_county_summary)
     
     # 8: Save the county with the largest turnout to a text file.
