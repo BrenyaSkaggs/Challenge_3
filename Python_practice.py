@@ -73,5 +73,3 @@ for county, voters in counties_dict.items():
     print(county + " county has " + str(voters) + " registered voters.")
 
 
-
->>>>>>> 4b5ff6e915fc64441fc24e8f21cb902cbc17bfc4
