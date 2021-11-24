@@ -39,7 +39,7 @@ Addition to the three candidates we reviewed three counties’ voter turnout Ara
 ![This is an image](https://raw.githubusercontent.com/BrenyaSkaggs/Election_Analysis/main/Resources/Candidate%20-%20County%20Turnout.png)  
 
 
-##Overview
+## Suggestion
 
 This code seems to be pretty versatile and could be used for any type of election. If you wanted to know voter turnout by city rather than county 
 you might get a better idea as to where the votes are coming from bigger city, suburbs, rurual area etc.
