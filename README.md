@@ -40,6 +40,7 @@ Addition to the three candidates we reviewed three counties’ voter turnout Ara
 
 
 ##Overview
-This code seems to be pretty versatile and could be used for any type of election. If you wanted to know voter turnout by city rather than county you might get a better idea as to where the votes are coming from bigger city, suburbs, rurual area etc. 
 
-
+This code seems to be pretty versatile and could be used for any type of election. If you wanted to know voter turnout by city rather than county 
+you might get a better idea as to where the votes are coming from bigger city, suburbs, rurual area etc.
+I would suggest changing the variables to simpler temrs so there is less confusion while keeping track of what you are working towards. 
