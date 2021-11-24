@@ -1,4 +1,4 @@
-#Election Analysis
+# Election Analysis
 
 
 ## Project Overview
@@ -13,7 +13,7 @@ using Python. We will be using our election report list to calculate the followi
 5.	Determine the winner of the election based on popular vote
 
 
-##Summary
+## Summary
 
 There were 369,711 total votes throughout this district in Colorado. 
 
