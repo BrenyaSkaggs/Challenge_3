@@ -10,9 +10,9 @@ import csv
 import os
 
 #Assign a variable for the file to load and the path.
-file_to_load = os.path.join("Resources","election_results.csv") 
+file_to_load= os.path.join("Resources","election_results.csv")
 #Assign a variable to save the file to a path.
-file_to_save= os.path.join("Analysis","election_analysis.txt") 
+file_to_save= os.path.join("Resources","election_analysis.txt") 
  
 #Initialize total vote counter
 total_votes = 0
@@ -27,6 +27,7 @@ winning_percentage= 0
 #Open the election results and read the file.
 with open(file_to_load) as election_data:
     File_reader=csv.reader(election_data)
+   
     #Read the header row.
     header=next(File_reader)
     #Print each row in the CSV file.
@@ -46,18 +47,18 @@ with open(file_to_load) as election_data:
         candidate_votes[candidate_name] +=1 
 
  #Save the results to our text file.       
-with open(file_to_save, "w") as txt_file:
-   
+outfile=open(file_to_save, "w")  
+outfile.write("")
     # After opening the file print the final vote count to the terminal.   
-    election_results = (
+election_results = (
         f"\nElection Results\n"
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n")
 print(election_results, end="")
 
-#After printing the final vote count to the terminal save the finaly vote count tothe text file.
-txt_file.write(election_results)  
+#After printing the final vote count to the terminal save the finaly vote count to the text file.
+outfile.write(election_results) 
 for candidate_name in candidate_votes:
     #Retrieve vote count of a candidate.
     votes = candidate_votes[candidate_name]
@@ -67,12 +68,13 @@ for candidate_name in candidate_votes:
     
     # Print each candidate's voter count and percentage to the terminal.
     print(candidate_results)   
-#Determine the winning vote count and candidate
-if (votes > winning_count) and (vote_percentage > winning_percentage):
-    winning_counts = votes
-    winning_candidate= candidate_name
-    winning_percentage = vote_percentage
-#Print the winning candidates name to the terminal.
+
+    #Determine the winning vote count and candidate
+    if (votes > winning_count) and (vote_percentage > winning_percentage):
+        winning_counts = votes
+        winning_candidate= candidate_name
+        winning_percentage = vote_percentage
+#Print the winning candidates results to the terminal.
 winning_candidate_summary= (
     f"-------------------------\n"
     f"Winner: {winning_candidate}\n"
@@ -80,8 +82,9 @@ winning_candidate_summary= (
     f"Winning Percentage: {winning_percentage:.1f}%\n"
     f"-------------------------\n")
 print(winning_candidate_summary)
-# Save the winning candidate's results to the text file.
-txt_file.write(winning_candidate_summary)
+
+ # Save the winning candidate's results to the text file.
+outfile.write(winning_candidate_summary)
 
 
 
