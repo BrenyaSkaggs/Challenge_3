@@ -36,5 +36,6 @@ Addition to the three candidates we reviewed three counties’ voter turnout Ara
     -Arapahow came in last with 6.7% of the votes, 24,,801 total votes.
 
 
+![This is an image](https://raw.githubusercontent.com/BrenyaSkaggs/Election_Analysis/main/Resources/Candidate%20-%20County%20Turnout.png)  
 
 
